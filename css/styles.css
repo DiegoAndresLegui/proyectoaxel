@@ -1,0 +1,163 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 62, 5%;
+    font-family: 'Patrick Hand', cursive
+}
+
+/*mobile first 0px-400px*/
+
+body {
+    background-color: #6184db;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 19% 16% 16% 16% 16%;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    list-style-type: none;
+    margin: 5px;
+    background-color: #50c5b7;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #F2F2F2;
+    list-style-type: none;
+}
+
+h1 {
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+    padding: 10px;
+    color: black
+}
+
+h2 {
+    padding: 10px;
+    width: 100%;
+    color: black;
+    font-size: 20px
+}
+
+img {
+    width: 80%;
+    border: solid 15px black;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.icono {
+    transition: all 2s;
+}
+
+.icono:hover {
+    transform: rotate(360deg);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    background-color: #50c5b7;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.redes-ig svg {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.intro {
+    background-color: #9cec5b;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.avanzar {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin-left: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-items: center;
+    background-color: #9cec5b;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.categoriasimg {
+    width: 70%;
+}
+
+.juegosimg {
+    width: 80%
+}
+
+.redessoc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+@media(min-width:768px) {
+    /*768px en adelante*/
+
+    .categorias {
+        display: grid;
+        grid-template-areas: "a a a";
+        align-items: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-items: center;
+        background-color: #9cec5b;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 5px;
+    }
