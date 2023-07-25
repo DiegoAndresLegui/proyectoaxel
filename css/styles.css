@@ -140,10 +140,23 @@ footer {
 
 .redessoc {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     justify-items: center;
     align-items: center;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-items: center;
+    background-color: #9cec5b;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
 }
 
 @media(min-width:768px) {
@@ -161,3 +174,17 @@ footer {
         padding: 5px;
         margin: 5px;
     }
+    .formulario {
+        display: grid;
+        grid-template-areas: "a a a";
+        align-items: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-items: center;
+        background-color: #9cec5b;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+}
